@@ -7,10 +7,12 @@
     <body class="main">
         <div class="calculator">
             <div class="theme-toggle">
-                <button onclick="toggleMode()">Toggle Theme</button>
-            <input type="text" id="input" disabled>
-            <span id="output"></span>
-        </div>
+                <button class="toggle-btn" type="button" onclick="toggleMode()">Toggle Theme</button>
+                </div>
+            <div class="display">    
+                <input type="text" id="input" disabled>
+                <span id="output"></span>
+            </div>
         <div class="keypad">
             <div class="numbers">
                 <button onclick="appendValue('7')">7</button>
@@ -25,8 +27,7 @@
                 <button onclick="appendValue('0')">0</button>
                 <button onclick="appendValue('.')">.</button>
             </div>
-        </div>
-        <div class="operations">
+            <div class="operations">
                 <button class="operator-btn" onclick="clearDisplay()">C</button>
                 <button class="operator-btn" onclick="deleteCharacter()">&#9003;</button>
                 <button class="operator-btn" onclick="appendValue('(')">(</button>
@@ -40,8 +41,10 @@
                 <button class="operator-btn" onclick="appendValue('*')">*</button>
                 <button class="operator-btn" onclick="appendValue('-')">-</button>
                 <button class="operator-btn" onclick="appendValue('+')">+</button>
-                <button class="operator-btn" onclick="calculate()">=</button>
+                <button class="operator-btn" onclick="calculate()">=</button>   
+            </div>
         </div>
+        
         <script src="script.js"></script>
     </body>
 </html>
